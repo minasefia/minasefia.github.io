@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Record</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$("a[rel=example_group]").fancybox({
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none',
+			'titlePosition' 	: 'over',
+			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+				return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+			}
+		});
+
+
+
+	});
+</script>
+
+</head>
+
+<body>
+<div id="contents">
+<div class="header_container">
+<header id="header">
+<h1><a href="index.html"><img src="img/index_title02.png" alt="record"></a></h1>
+</header>
+
+<ul id="nav">
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+	<li><a href="works.html">WORKS</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</div><!--header_container-->
+
+<div class="breadcrumb">
+<ul>
+	<li><a href="index.html">TOP</a></li>
+	<li><a href="works.html">WORKS</a></li>
+</ul>
+</div><!--breadcrumb-->
+
+<p class="text1">&loz;Illust</p>
+<div id="illust_box">
+    <a rel="example_group" href="img/illust_box/suisen.jpg" title="水仙"><img src="img/illust_box/suisen.jpg" alt="水仙"></a>
+    <a rel="example_group" href="img/illust_box/s_matteta.jpg" title="待ってた"><img src="img/illust_box/s_matteta.jpg" alt="待ってた"></a>
+    <a rel="example_group" href="img/illust_box/s_ringo.jpg" title="りんご"><img src="img/illust_box/s_ringo.jpg" alt="りんご"></a>
+    <a rel="example_group" href="img/illust_box/s_piasu.jpg" title="ピアス"><img src="img/illust_box/s_piasu.jpg" alt="ピアス"></a>
+    <a rel="example_group" href="img/illust_box/yomek.jpg" title="嫁"><img src="img/illust_box/yomek.jpg" alt="嫁"></a>
+    <a rel="example_group" href="img/illust_box/kemonodesign.jpg" title="けものデザイン"><img src="img/illust_box/kemonodesign.jpg" alt="けものデザイン"></a>
+	<a rel="example_group" href="img/illust_box/ra7.jpg" title="女子中学生"><img src="img/illust_box/ra7.jpg" alt="女子中学生"></a>
+	<a rel="example_group" href="img/illust_box/dare.jpg" title="夕焼け"><img src="img/illust_box/dare.jpg" alt="夕焼け"></a>
+	<a rel="example_group" href="img/illust_box/sora.jpg" title="空"><img src="img/illust_box/sora.jpg" alt="空"></a>
+    <a rel="example_group" href="img/illust_box/sekai.jpg" title="世界"><img src="img/illust_box/sekai.jpg" alt="世界"></a>
+    <a rel="example_group" href="img/illust_box/akashi.jpg" title="証"><img src="img/illust_box/akashi.jpg" alt="証"></a>
+    <a rel="example_group" href="img/illust_box/goodmorning.jpg" title="おはよう"><img src="img/illust_box/goodmorning.jpg" alt="おはよう"></a>
+    <a rel="example_group" href="img/illust_box/yorumiku.jpg" title="夜ミク"><img src="img/illust_box/yorumiku.jpg" alt="夜ミク"></a>
+    <a rel="example_group" href="img/illust_box/wasurenagusa.jpg" title="勿忘草"><img src="img/illust_box/wasurenagusa.jpg" alt="勿忘草"></a>
+    <a rel="example_group" href="img/illust_box/weare.jpg" title="weareNCA"><img src="img/illust_box/weare.jpg" alt="weareNCA"></a>
+    <a rel="example_group" href="img/illust_box/natsuowa.jpg" title="夏の終わり"><img src="img/illust_box/natsuowa.jpg" alt="夏の終わり"></a>
+</div><!--illust_box-->
+
+<p class="text1">&loz;HP</p>
+<div id="design_box">
+<a rel="example_group" href="img/design_box/cafe67_top.png"  title="cafe67toppage"><img src="img/design_box/cafe67_top.png" alt="cafe67toppage"></a>
+<a rel="example_group" href="img/design_box/seihosyou_top.png" title="正保小学校toppage"><img src="img/design_box/seihosyou_top.png" alt="正保小学校top"></a>
+</div><!--design_box-->
+
+
+
+<footer id="footer">
+
+<ul class="url_btn">
+<!--facebook-->
+<li class="facebook_color"><a href="https://www.facebook.com/ami.matsuba.9"><span>facebook</span></a></li>
+<!--twitter-->
+<li class="twitter_color"><a href="https://twitter.com/sana_m124"><span>twitter</span></a></li>
+<!--github-->
+<li class="github_color"><a href="https://github.com/minasefia"><span>github</span></a></li>
+</ul>
+
+<small>&copy; Ami Matsuba, all rights reserved.</small>
+</footer>
+	
+</div><!--contents-->
+</body>
+</html>

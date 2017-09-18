@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="Keywords" content="ポートフォリオ">
+<meta name="discrition" content="ポートフォリオサイトです。">
+<meta name="auther" content="Record">
+<title>Record</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="contents">
+<div class="header_container">
+<header id="header">
+<h1><a href="index.html"><img src="img/index_title02.png" alt="record"></a></h1>
+</header>
+
+<ul id="nav">
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+	<li><a href="works.html">WORKS</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</div><!--header_container-->
+
+<div class="breadcrumb">
+<ul>
+	<li><a href="index.html">TOP</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</div><!--breadcrumb-->
+
+<div id="main_wrap">
+<p class="column1">ご意見・ご感想、ご質問はこちらのメールフォームよりお願い致します。<br> また、メールでも受け付けております。 Mail : <a href="mailto:info@arop.jp">riririnose@gmail.com</a></p>
+
+<form id="mailform" method="post" action="riririnose@gmail.com" onSubmit="returnsendmail(this)";>
+<div class="table_form">
+<table>
+  <tr>
+    <th>メールアドレス<span>*</span><p>e-mail address</p></th>
+    <td><input name="email(必須)" size="50" maxlength="50" class="mf" type="text" style="width: 300px;"></td>
+  </tr>
+  <tr>
+    <th>確認用メールアドレス<span>*</span><p>e-mail address</p></th>
+    <td><input name="confirm_email" size="50" maxlength="50" class="mf" type="text" style="width: 300px;"></td>
+  </tr>
+  <tr>
+    <th>お名前<span>*</span><p>your name</p></th>
+    <td><input name="name" size="50" maxlength="50" class="mf" type="text" style="width: 200px;"></td>
+  </tr>
+  <tr>
+    <th>会社名/団体名<p>company</p></th>
+    <td><input name="会社名 / 団体名" size="30" type="text" style="width: 180px;"></td>
+  </tr>
+  <tr>
+    <th>お問い合わせ種別<span>*</span><p>category</p></th>
+    <td><select name="お問い合わせ種別(必須)">
+     <option value="選択して下さい">選択して下さい</option>
+     <option value="ご意見・ご感想">ご意見・ご感想</option>
+     <option value="ご質問">ご質問</option>
+     <option value="お仕事のご相談">お仕事のご相談</option>
+    </select></td>
+  </tr>
+  <tr>
+    <th>郵便番号<p>postcode</p></th>
+    <td><input name="郵便番号" size="10" type="text" style="width: 60px;"><input value="〒から住所を自動入力" onclick="mfpc('mailform','郵便番号','住所');" type="button"></td>
+  </tr>
+  <tr>
+    <th>住所<p>address</p></th>
+    <td><input name="住所" size="70" type="text" style="width: 420px;"></td>
+  </tr>
+  <tr>
+    <th>ご用件<span>*</span><p>inquiry body</p></th>
+    <td><textarea name="ご用件(必須)" rows="10" cols="70" style="height: 120px; width: 420px;"></textarea></td>
+  </tr>
+</table>
+</div><!--table_form-->
+
+<p class="text_center"><input value="メールを送信する" type="submit">　<input name="reset" value="リセット" type="reset"></p>
+</form>
+</div><!--main_wrap-->
+
+
+<footer id="footer">
+
+<ul class="url_btn">
+<!--facebook-->
+<li class="facebook_color"><a href="https://www.facebook.com/ami.matsuba.9"><span>facebook</span></a></li>
+<!--twitter-->
+<li class="twitter_color"><a href="https://twitter.com/sana_m124"><span>twitter</span></a></li>
+<!--github-->
+<li class="github_color"><a href="https://github.com/minasefia"><span>github</span></a></li>
+</ul>
+
+<small>&copy; Ami Matsuba, all rights reserved.</small>
+</footer>
+
+
+</body>
+</html>
