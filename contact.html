@@ -5,16 +5,17 @@
 <meta name="Keywords" content="ポートフォリオ">
 <meta name="discrition" content="ポートフォリオサイトです。">
 <meta name="auther" content="Record">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Record</title>
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/mailform.css">
 </head>
 
 <body>
 
 <div id="contents">
 <div class="header_container"><div class="inner">
-<header id="header">
+<!--<header id="header">
 <h1><a href="index.html"><img src="img/index_title02.png" alt="record"></a></h1>
 </header>
 
@@ -25,6 +26,29 @@
 	<li><a href="contact.html">CONTACT</a></li>
 </ul>
 </div></div><!--header_container-->
+
+<header id="top-head">
+        <div id="mobile-head">
+            <h1 class="logo"><a href="index.html"><img src="img/index_title02.png" alt="record"></a></h1>
+            <div id="nav-toggle">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <nav id="nav">
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+</header>
+</div></div><!--header_container-->
+
 
 <div class="wrap">
 <div class="breadcrumb">
@@ -40,42 +64,43 @@
 <form id="mailform" method="post" action="http://edu.nca.ac.jp/1502030018ma/php-script/mail.php">
 <div class="table_form">
 <table>
+ <tr>
+    <th>お名前<span>*</span><p>your name</p></th>
+    <td class="required"><input type="text" id="name" size="15" name="お名前" value=""  required/></td>
+  </tr>
   <tr>
     <th>メールアドレス<span>*</span><p>e-mail address</p></th>
-    <td><input name="メールアドレス" size="50" maxlength="50" class="mf" type="text" style="width: 300px;"></td>
+    <td class="required"><input type="email" id="mail_address" name="メールアドレス" value="" required/></td>
   </tr>
   <tr>
     <th>確認用メールアドレス<span>*</span><p>e-mail address</p></th>
-    <td><input name="確認用メールアドレス" size="50" maxlength="50" class="mf" type="text" style="width: 300px;"></td>
-  </tr>
-  <tr>
-    <th>お名前<span>*</span><p>your name</p></th>
-    <td><input name="お名前" size="50" maxlength="50" class="mf" type="text" style="width: 200px;"></td>
+    <td class="required"><input type="email" id="mail_address_confirm" name="確認用メールアドレス" value="" required/></td>
   </tr>
   <tr>
     <th>会社名/団体名<p>company</p></th>
-    <td><input name="会社名/団体名" size="30" type="text" style="width: 180px;"></td>
+    <td><input type="text" id="company" name="会社名/団体名" value="" /></td>
   </tr>
   <tr>
     <th>お問い合わせ種別<span>*</span><p>category</p></th>
-    <td><select name="お問い合わせ種別">
+    <td><select name="お問い合わせ種別"　required/>
      <option value="選択して下さい">選択して下さい</option>
      <option value="ご意見・ご感想">ご意見・ご感想</option>
      <option value="ご質問">ご質問</option>
      <option value="お仕事のご相談">お仕事のご相談</option>
+     <option value="その他">その他</option>
     </select></td>
   </tr>
   <tr>
     <th>郵便番号<p>postcode</p></th>
-    <td><input name="郵便番号" size="10" type="text" style="width: 60px;"><input value="〒から住所を自動入力" onclick="mfpc('mailform','郵便番号','住所');" type="button"></td>
+    <td class="required"><input type="text" id="postal" name="郵便番号" value="" onkeyup="AjaxZip3.zip2addr(this,'','address_1','address_1');" /></td>
   </tr>
   <tr>
     <th>住所<p>address</p></th>
-    <td><input name="住所" size="70" type="text" style="width: 420px;"></td>
+    <td><input type="text" id="address_1" name="住所" value="" /><input type="text" id="address_2" name="住所" value="" /></td>
   </tr>
   <tr>
     <th>ご用件<span>*</span><p>inquiry body</p></th>
-    <td><textarea name="ご用件" rows="10" cols="70" style="height: 120px; width: 420px;"></textarea></td>
+    <td class="required"><textarea id="mail_contents" name="ご用件" cols="40" rows="5" required></textarea></td>
   </tr>
 </table>
 </div><!--table_form-->
@@ -100,5 +125,15 @@
 </div></footer>
 <!--contents--></div>
 
+<!-- JPOSTAL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  
+<script type="text/javascript" src="js/jquery.jpostal.js"></script>
+<!-- 住所自動入力ライブラリここから -->
+<script type="text/javascript" src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

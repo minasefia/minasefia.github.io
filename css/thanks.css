@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+
+body{
+	font-family : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Verdana, Arial, sans-serif;
+	color : #454545;
+	font-size : 90%;
+	line-height : 1.8;
+	background : url(../img/bg-body.png)repeat 0 0;
+}
+
+a:link,
+a:visited{
+	color : #4040ff;
+	text-decoration : underline;
+}
+
+a:hover,
+a:active{
+	color : #4040ff;
+	text-decoration : none;
+}
+
+
+
+
+/* --responsive------------------------------------------- */
+
+/* 640pixel start */
+@media screen and ( max-width : 640px ){
+
+body{
+	font-size : 100%;
+}
+
+}
+/* 640pixel end */
+
+
+
+div#thanks{
+	width : 960px;
+	margin : 50px auto;
+	padding : 30px 0;
+	background : #ffffff;
+	border : 1px solid #cccccc;
+	border-radius : 7px;
+	box-shadow : 0 0 7px rgba( 0, 0, 0, 0.2 );
+}
+
+div#thanks h1,
+div#thanks h2{
+	width : 90%;
+	margin : 0 auto;
+	font-size : 135%;
+	font-weight : bold;
+	border-bottom : 1px solid #454545;
+}
+
+div#thanks h2{
+	margin-top : 3em;
+}
+
+div#thanks p{
+	width : 90%;
+	margin : 0 auto;
+	margin-top : 2em;
+}
+
+div#thanks dl{
+	width : 90%;
+	margin : 0 auto;
+}
+
+div#thanks dl dt{
+	margin-top : 2em;
+}
+
+
+
+
+/* --responsive------------------------------------------- */
+
+/* 640pixel start */
+@media screen and (max-width:640px){
+
+div#thanks{
+	width : 95%;
+}
+
+}
+/* 640pixel end */
+

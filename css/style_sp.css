@@ -1,0 +1,172 @@
+/* ウィンドウ幅が0〜768pxの場合に適用するCSS */
+@media only screen and (max-width:768px)
+{
+	.header_container{
+		top: 0px;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+		padding: 0 0px;
+	}
+	#header{
+		background: #FFF;
+		position: relative;
+	}
+	#top-head h1{
+	    margin: 20px 0px 0px 20px;
+    }
+	#header #nav{
+		display: none;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		background: #5ec2c6;
+	}
+	#header #nav ul{
+		display: block;
+		padding: 10px 0;
+	}
+	#header #nav ul li{
+		display: block;
+		padding: 10px 0;
+	}
+	#header #nav ul li a{
+		display: inline-block;
+		color: #FFF;
+		font-size: 13px;
+		letter-spacing: 1px;
+		transform: perspective(1px) translateZ(0);
+		position: relative;
+		margin: 0 15px;
+	}
+
+
+
+    #top-head{
+        width: 100%;
+        padding: 0;
+    }
+    #top-head {
+        top: 0;
+        position: absolute;
+        margin-top: 0;
+    }
+    /* Fixed reset */
+    #top-head.fixed {
+        padding-top: 0;
+        background: transparent;
+    }
+    #mobile-head {
+        background: #fff;
+        width: 100%;
+        /*height: 56px;*/
+        z-index: 2000;
+        position: relative;
+    }
+    #top-head.fixed .logo,
+    #top-head .logo {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    #nav {
+        position: absolute;
+        /* 開いてないときは画面外に配置 */
+        top: -520px;
+        background: #5ec2c6 !important;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+		z-index:9999 !important;
+ }
+    #nav ul {
+        list-style: none;
+        position: static;
+        right: 0;
+        bottom: 0;
+        font-size: 14px;
+    }
+    #nav ul li {
+		display:block;
+        float: none;
+        position: static;
+    }
+    #top-head #nav ul li a,
+    #top-head.fixed #nav ul li a {
+        width: 100%;
+        display: block;
+        color: #FFF;
+        padding: 18px 0;
+    }
+    #nav-toggle {
+        display: block;
+		margin: 13px 20px 0 0;
+    }
+    /* #nav-toggle 切り替えアニメーション */
+    .open #nav-toggle span:nth-child(1) {
+        top: 5px;
+        -webkit-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        transform: rotate(315deg);
+    }
+    .open #nav-toggle span:nth-child(2) {
+        width: 0;
+        left: 50%;
+    }
+    .open #nav-toggle span:nth-child(3) {
+        top: 5px;
+        -webkit-transform: rotate(-315deg);
+        -moz-transform: rotate(-315deg);
+        transform: rotate(-315deg);
+    }
+    /* #global-nav スライドアニメーション */
+    .open #nav {
+        /* #global-nav top + #mobile-head height */
+        -moz-transform: translateY(556px);
+        -webkit-transform: translateY(556px);
+        transform: translateY(556px);
+    }
+	
+	
+	.breadcrumb ul li a{
+	display: block;
+	float: left;
+	height: 15px;
+	background: #5ec2c6;
+	text-align: center;
+	padding: 5px 5px 0 10px;
+	position: relative;
+	margin: 0 5px 0 0;
+	font-size: 10px;
+	text-decoration: none;
+	color: #FFF;
+    }
+	
+	
+	#slider p{
+	float: right;
+	font-size: 12px;
+	margin-bottom: 50px;
+    }
+	
+	#footer ul{
+	margin: 15px 0 10px 10px;
+    }
+	#footer small{
+	color: #C0C0C0;
+	margin: 10px 10px 15px 0;
+    }
+	
+	
+	
+	
+	
+
+
+
+
+}
