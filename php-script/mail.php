@@ -33,7 +33,7 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 //---------------------------　必須設定　必ず設定してください　-----------------------
 
 //サイトのトップページのURL　※デフォルトでは送信完了後に「トップページへ戻る」ボタンが表示されますので
-$site_top = "http://edu.nca.ac.jp/1502030018ma/portfolio/";
+$site_top = "http://nca.jp.net/matsuba/";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
 $to = "riririnose@gmail.com";
@@ -75,10 +75,10 @@ $confirmDsp = 1;
 // 送信完了後に自動的に指定のページ(サンクスページなど)に移動する(する=1, しない=0)
 // CV率を解析したい場合などはサンクスページを別途用意し、URLをこの下の項目で指定してください。
 // 0にすると、デフォルトの送信完了画面が表示されます。
-$jumpPage = 0;
+$jumpPage = 1;
 
 // 送信完了後に表示するページURL（上記で1を設定した場合のみ）※httpから始まるURLで指定ください。
-$thanksPage = "http://xxx.xxxxxxxxx/thanks.html";
+$thanksPage = "http://nca.jp.net/matsuba/thanks.html";
 
 // 必須入力項目を設定する(する=1, しない=0)
 $requireCheck = 0;
@@ -86,7 +86,7 @@ $requireCheck = 0;
 /* 必須入力項目(入力フォームで指定したname属性の値を指定してください。（上記で1を設定した場合のみ）
 値はシングルクォーテーションで囲み、複数の場合はカンマで区切ってください。フォーム側と順番を合わせると良いです。 
 配列の形「name="○○[]"」の場合には必ず後ろの[]を取ったものを指定して下さい。*/
-$require = array('メールアドレス','確認用メールアドレス','お名前','お問い合わせ種別','ご用件');
+$require = array('お名前','メールアドレス','確認用メールアドレス','お問い合わせ種別','ご用件');
 
 
 //----------------------------------------------------------------------
@@ -125,12 +125,12 @@ $mailFooterDsp = 0;
 $mailSignature = <<< FOOTER
 
 ──────────────────────
-名古屋コミュニケーションアート専門学校　コミックイラスト専攻3年松葉亜美
-〒150-XXXX 東京都○○区○○ 　○○ビル○F　
-TEL：03- XXXX - XXXX 　FAX：03- XXXX - XXXX
-携帯：090- XXXX - XXXX 　
-E-mail:riririnose@gmail.com
-URL: http://www.php-factory.net/
+名古屋コミュニケーションアート専門学校 コミックイラスト専攻3年 松葉亜美
+〒460-0008 愛知県名古屋市中区栄3丁目20-4
+TEL：0120- 532 - 758
+携帯：090- 6366 - 7505　
+E-mail: riririnose@gmail.com
+URL:http://nca.jp.net/matsuba/
 ──────────────────────
 
 FOOTER;
@@ -220,81 +220,107 @@ else if($confirmDsp == 1){
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="Keywords" content="ポートフォリオ">
+<meta name="Keywords" content="ポートフォリオ,名古屋コミュニケーションアート専門学校">
 <meta name="discrition" content="ポートフォリオサイトです。">
 <meta name="auther" content="Record">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Record</title>
-<link rel="stylesheet" href="http://edu.nca.ac.jp/1502030018ma/portfolio/css/reset.css">
-<link rel="stylesheet" href="http://edu.nca.ac.jp/1502030018ma/portfolio/css/style.css">
+<link rel="stylesheet" href="http://nca.jp.net/matsuba/css/layout.css">
+<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
 </head>
 
 <body>
 
 <div id="contents">
-<div class="header_container">
-<header id="header">
-<h1><a href="index.html"><img src="http://edu.nca.ac.jp/1502030018ma/portfolio/img/index_title02.png" alt="record"></a></h1>
+<div class="header_container"><div class="inner">
+
+
+<header id="top-head">
+        <div id="mobile-head">
+            <h1 class="logo"><a href="http://nca.jp.net/matsuba/index.html"><img src="http://nca.jp.net/matsuba/img/index_title02.png" alt="record"></a></h1>
+            <div id="nav-toggle">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <nav id="nav">
+            <ul>
+            <li><a href="http://nca.jp.net/matsuba/portfolio/index.html">HOME</a></li>
+            <li><a href="http://nca.jp.net/matsuba/portfolio/about.html">ABOUT</a></li>
+            <li><a href="http://nca.jp.net/matsuba/portfolio/works.html">WORKS</a></li>
+            <li><a href="http://nca.jp.net/matsuba/portfolio/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
 </header>
+</div></div><!--header_container-->
+<div class="wrap">
 
-<ul id="nav">
-	<li><a href="http://edu.nca.ac.jp/1502030018ma/portfolio/index.html">HOME</a></li>
-	<li><a href="http://edu.nca.ac.jp/1502030018ma/portfolio/about.html">ABOUT</a></li>
-	<li><a href="http://edu.nca.ac.jp/1502030018ma/portfolio/works.html">WORKS</a></li>
-	<li><a href="http://edu.nca.ac.jp/1502030018ma/portfolio/contact.html">CONTACT</a></li>
-</ul>
-</div><!--header_container-->
-
-<div class="breadcrumb">
+<div class="breadcrumb"><div class="inner">
 <ul>
-	<li><a href="http://edu.nca.ac.jp/1502030018ma/portfolio/index.html">TOP</a></li>
-	<li><a href="http://edu.nca.ac.jp/1502030018ma/portfolio/contact.html">CONTACT</a></li>
+	<li><a href="http://nca.jp.net/matsuba/portfolio/index.html">TOP</a></li>
+	<li><a href="http://nca.jp.net/matsuba/portfolio/contact.html">CONTACT</a></li>
 </ul>
-</div><!--breadcrumb-->
+</div></div><!--breadcrumb-->
 
-<div id="main_wrap">
+
+ <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+ <script src="http://nca.jp.net/matsuba/portfolio/js/script.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
 
 <!-- ▼************ 送信内容表示部　※編集は自己責任で ************ ▼-->
+<div id="main_wrap">
 <div class="table_form">
 <?php if($empty_flag == 1){ ?>
-<div align="center">
+
 <h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
-<?php echo $errm; ?><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()">
-</div>
+<?php echo $errm; ?><br /><br /><input type="button" value=" 前画面に戻る " onclick="history.back()">
 <?php }else{ ?>
+<div class="inner">
 <h3>確認画面</h3>
-<p align="center">以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
+<p class="center">以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
 <form action="<?php echo h($_SERVER['SCRIPT_NAME']); ?>" method="POST">
 <table class="formTable">
 <?php echo confirmOutput($_POST);//入力内容を表示?>
 </table>
-<p align="center"><input type="hidden" name="mail_set" value="confirm_submit">
+<p class="center"><input type="hidden" name="mail_set" value="confirm_submit">
 <input type="hidden" name="httpReferer" value="<?php echo h($_SERVER['HTTP_REFERER']);?>">
 <input type="submit" value="　送信する　">
-<input type="button" value="前画面に戻る" onClick="history.back()"></p>
+<input type="button" value="前画面に戻る" onclick="history.back()"></p>
 </form>
 <?php } ?>
+</div><!--inner-->
 </div><!-- /formWrap -->
+</div></div>
+
 <!-- ▲ *********** 送信内容確認部　※編集は自己責任で ************ ▲-->
 
 <!-- ▼ Footerその他コンテンツなど　※編集可 ▼-->
-</div><!--main_wrap-->
 
 
-<footer id="footer">
 
-<ul class="url_btn">
+<footer id="footer"><div class="inner">
+<div class="url_btn">
+<ul>
 <!--facebook-->
 <li class="facebook_color"><a href="https://www.facebook.com/ami.matsuba.9"><span>facebook</span></a></li>
 <!--twitter-->
 <li class="twitter_color"><a href="https://twitter.com/sana_m124"><span>twitter</span></a></li>
 <!--github-->
 <li class="github_color"><a href="https://github.com/minasefia"><span>github</span></a></li>
+<!--instagram-->
+<li class="instagram_color"><a href="https://www.instagram.com/sana_m124/?hl=ja"><span>instagram</span></a></li>
+<!--pixiv-->
+<li class="pixiv_color"><a href="https://www.pixiv.net/member.php?id=3562304"><span>pixiv</span></a></li>
 </ul>
+<!--url_btn--></div>
 
+<div class="pagetop"><a href="about.html"><img src="http://nca.jp.net/matsuba/portfolio/img/toppage_logo.png" alt="ページトップへ"></a></div>
 <small>&copy; Ami Matsuba, all rights reserved.</small>
-</footer>
+</div></footer>
 <!--contents--></div>
 
 </body>
@@ -584,6 +610,7 @@ function refererCheck($Referer_check,$Referer_check_domain){
 function copyright(){
 	echo '<a style="display:block;text-align:center;margin:15px 0;font-size:11px;color:#aaa;text-decoration:none" href="http://www.php-factory.net/" target="_blank">- PHP工房 -</a>';
 }
+
 //----------------------------------------------------------------------
 //  関数定義(END)
 //----------------------------------------------------------------------

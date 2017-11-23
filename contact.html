@@ -15,17 +15,7 @@
 
 <div id="contents">
 <div class="header_container"><div class="inner">
-<!--<header id="header">
-<h1><a href="index.html"><img src="img/index_title02.png" alt="record"></a></h1>
-</header>
 
-<ul id="nav">
-	<li><a href="index.html">HOME</a></li>
-	<li><a href="about.html">ABOUT</a></li>
-	<li><a href="works.html">WORKS</a></li>
-	<li><a href="contact.html">CONTACT</a></li>
-</ul>
-</div></div><!--header_container-->
 
 <header id="top-head">
         <div id="mobile-head">
@@ -49,7 +39,6 @@
 </header>
 </div></div><!--header_container-->
 
-
 <div class="wrap">
 <div class="breadcrumb">
 <ul>
@@ -59,9 +48,9 @@
 </div><!--breadcrumb-->
 
 <div id="main_wrap">
-<p class="column1">ご意見・ご感想、ご質問はこちらのメールフォームよりお願い致します。<br> また、メールでも受け付けております。 Mail : <a href="mailto:info@arop.jp">riririnose@gmail.com</a></p>
+<p class="column1">ご意見・ご感想、ご質問はこちらのメールフォームよりお願い致します。*は必須項目です。<br> また、メールでも受け付けております。<br> Mail : <a href="mailto:info@arop.jp">riririnose@gmail.com</a></p>
 
-<form id="mailform" method="post" action="http://edu.nca.ac.jp/1502030018ma/php-script/mail.php">
+<form id="mailform" method="post" action="http://nca.jp.net/matsuba/php-script/mail.php">
 <div class="table_form">
 <table>
  <tr>
@@ -90,9 +79,10 @@
      <option value="その他">その他</option>
     </select></td>
   </tr>
+
   <tr>
     <th>郵便番号<p>postcode</p></th>
-    <td class="required"><input type="text" id="postal" name="郵便番号" value="" onkeyup="AjaxZip3.zip2addr(this,'','address_1','address_1');" /></td>
+    <td><input type="text" id="postal" name="郵便番号" value="" onkeyup="AjaxZip3.zip2addr(this,'','address_1','address_1');" /></td>
   </tr>
   <tr>
     <th>住所<p>address</p></th>
@@ -111,16 +101,22 @@
 </div><!--wrap-->
 
 <footer id="footer"><div class="inner">
-
-<ul class="url_btn">
+<div class="url_btn">
+<ul>
 <!--facebook-->
 <li class="facebook_color"><a href="https://www.facebook.com/ami.matsuba.9"><span>facebook</span></a></li>
 <!--twitter-->
 <li class="twitter_color"><a href="https://twitter.com/sana_m124"><span>twitter</span></a></li>
 <!--github-->
 <li class="github_color"><a href="https://github.com/minasefia"><span>github</span></a></li>
+<!--instagram-->
+<li class="instagram_color"><a href="https://www.instagram.com/sana_m124/?hl=ja"><span>instagram</span></a></li>
+<!--pixiv-->
+<li class="pixiv_color"><a href="https://www.pixiv.net/member.php?id=3562304"><span>pixiv</span></a></li>
 </ul>
+<!--url_btn--></div>
 
+<div class="pagetop"><a href="index.html"><img src="img/toppage_logo.png" alt="ページトップへ"></a></div>
 <small>&copy; Ami Matsuba, all rights reserved.</small>
 </div></footer>
 <!--contents--></div>
