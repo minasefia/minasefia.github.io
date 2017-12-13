@@ -308,7 +308,7 @@ else if($confirmDsp == 1){
 <!--facebook-->
 <li class="facebook_color"><a href="https://www.facebook.com/ami.matsuba.9"><span>facebook</span></a></li>
 <!--twitter-->
-<li class="twitter_color"><a href="https://twitter.com/sana_m124"><span>twitter</span></a></li>
+<li class="twitter_color"><a href="https://twitter.com/ri_no_m"><span>twitter</span></a></li>
 <!--github-->
 <li class="github_color"><a href="https://github.com/minasefia"><span>github</span></a></li>
 <!--instagram-->
