@@ -186,6 +186,11 @@
 	margin: 5px 0px 0 5px;
     }
 	
+	#news{
+		overflow: auto;
+		height: 250px;
+	    margin: 0 10px 30px 10px;
+    }
 	
 	
 

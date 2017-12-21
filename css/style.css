@@ -482,6 +482,16 @@ img{
 	text-decoration: none;
 }
 
+#news a{
+	color: #777;
+	text-decoration: none;
+}
+#news a:hover{
+	color: #755E5E;
+	text-decoration-line: underline;
+}
+
+
 /*==============================*/
 
 /*about設定*/
@@ -530,7 +540,9 @@ img{
 	margin: 20px 0 0 0;
 	text-align: left;
 }
-
+.sentence p{
+	line-height: 1.6;
+}
 
 /*==============================*/
 
@@ -608,7 +620,7 @@ img{
 }
 
 .table_form td input{
-	border: 1px solid #ccc;F
+	border: 1px solid #ccc;
 }
 
 /*==============================*/
